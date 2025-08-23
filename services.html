@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services & Pricing • Clipzy</title>
+  <meta name="description" content="Clipzy — clip it, ship it, watch it pop. Premium video editing for brands, creators, and campaigns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Services & Pricing • Clipzy">
+  <meta property="og:description" content="Clipzy — clip it, ship it, watch it pop. Premium video editing for brands, creators, and campaigns.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+<div class="page-gradient"></div>
+<header class="site-header">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Clipzy Logo">
+    <span>Clipzy</span>
+  </div>
+  <nav class="nav-links">
+<li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <a href="contact.html" class="btn primary">Get a Quote</a>
+</header>
+
+<main class="content">
+
+<section class="page-hero reveal">
+  <h1>Services</h1>
+  <p>Flexible packages for creators, brands, and agencies.</p>
+</section>
+
+<section class="pricing reveal">
+  <article class="price-card">
+    <h3>Short</h3>
+    <p class="price">$30</p>
+    <ul>
+      <li>short-form edit</li>
+      <li>Kinetic captions</li>
+      <li>2x revisions </li>
+      <li>48–72h turnaround</li>
+    </ul>
+    <a class="btn" href="#contact">Choose Starter</a>
+  </article>
+  <article class="price-card popular">
+    <h3> Shorts Starter</h3>
+    <div class="badge">Popular</div>
+    <p class="price">$99</p>
+    <ul>
+      <li>4 short-form edits</li>
+      <li>Kinetic captions</li>
+      <li>2x revisions each</li>
+      <li>48–72h turnaround</li>
+    </ul>
+    <a class="btn" href="#contact">Choose Shorts Starter</a>
+  </article>
+  <article class="price-card">
+    <h3>Advance</h3>
+    <p class="price">$199</p>
+    <ul>
+      <li>7 short-form edits</li>
+      <li>Kinetic captions</li>
+      <li>2x revisions each</li>
+      <li>48–72h turnaround each</li>
+    </ul>
+    <a class="btn" href="#contact">Choose advance</a>
+  </article>
+  <article class="price-card">
+    <h3>Long form</h3>
+    <p class="price">$80-$150</p>
+    <ul>
+      <li>1 Long-form edit</li>
+      <li>Kinetic captions</li>
+      <li>2x revisions each</li>
+      <li>48–72h turnaround</li>
+    </ul>
+    <a class="btn" href="#contact">Choose Long form</a>
+  </article>
+  <article class="price-card popular">
+    <div class="badge">Popular</div>
+    <h3>Growth</h3>
+    <p class="price">$300-$320</p>
+    <ul>
+      <li>12 shorts or 2 long-form</li>
+      <li>Motion graphics & SFX</li>
+      <li>Subtitles </li>
+      <li>Priority turnaround</li>
+    </ul>
+    <a class="btn primary" href="#contact">Choose Growth</a>
+  </article>
+  <article class="price-card">
+    <h3>Custom</h3>
+    <p class="price">On Request</p>
+    <ul>
+      <li>Retainers & ad stacks</li>
+      <li>Multi-language versioning</li>
+      <li>On-site edits & shoots</li>
+      <li>Dedicated PM</li>
+    </ul>
+    <a class="btn" href="#contact">Talk to Us</a>
+  </article>
+</section>
+
+<section id="contact" class="contact reveal">
+  <h2>Contact</h2>
+  <form class="contact-form" action="https://formspree.io/f/mpwlgwdn" method="POST">
+    <div class="row">
+      <label>
+        Full name
+        <input type="text" name="name" required placeholder="Your name" />
+      </label>
+      <label>
+        Email
+        <input type="email" name="_replyto" required placeholder="you@example.com" />
+      </label>
+    </div>
+
+    <label>
+      What do you need?
+      <textarea name="message" required placeholder="Tell us about your footage and goals… also mention your choosen package"></textarea>
+    </label>
+
+    <div class="row">
+      <label>
+        Budget
+        <select name="budget">
+          <option>Under ₹25k</option>
+          <option>₹25k–₹75k</option>
+          <option>₹75k–₹150k</option>
+          <option>₹150k+</option>
+        </select>
+      </label>
+
+      <label>
+        Timeline
+        <select name="timeline">
+          <option>ASAP</option>
+          <option>This month</option>
+          <option>Next 2–3 months</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- optional hidden fields -->
+    <input type="hidden" name="_subject" value="New Contact Request - Clipzy">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://clipzy.com/thankyou.html" />
+
+    <button class="btn primary" type="submit">Request Quote</button>
+  </form>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Clipzy logo" class="logo small" />
+        <strong>Clipzy</strong>
+      </div>
+      <p>clip it, ship it, watch it pop.</p>
+      <p>Founded by <strong>Yashashvi Khanduri</strong></p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:clipzzyyyofficial@gmail.com">clipzzyyyofficial@gmail.com</a></li>
+        <li>© 2025 Clipzy. All rights reserved.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
